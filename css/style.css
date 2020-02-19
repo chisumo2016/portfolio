@@ -13,6 +13,7 @@
     --fw-bold:900;
 
     --clr-right: #fff;
+    --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #16e0bd;
 
@@ -36,7 +37,7 @@
     }
 }
 
-strong{ font-weight: var(--fs-body)}
+
 
 /*General Styles*/
 body{
@@ -54,6 +55,31 @@ section{
 img{
     display: block;
     max-width: 100%;
+}
+
+strong{ font-weight: var(--fs-body)}
+:focus{
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}
+
+/*Buttons*/
+
+.btn{
+    display: inline-block;
+    padding: .5em 2.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+.btn:hover{
+    transform: scale(1.1);
 }
 
 /*Typography*/
@@ -137,10 +163,54 @@ nav { display:none;}
 }
 
 
+/*Section Service*/
 
+.my-services{
+    background-color: var(--clr-dark);
+    background-image: url("../images/services-bg.jpg");
+    background-size: cover;
+    background-blend-mode:multiply ;
+    color: var(--clr-light);
+    text-align: center;
+}
 
+.section__title--services{
+    color: var(--clr-accent);
+    position: relative;
+}
 
+.section__title--services::after{   /*Line  */
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-light);   /*  currentColor  */
+    opacity: 0.25;
+}
+.services{
+    margin-bottom: 4em;
+}
 
+.service{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/*Put into column*/
+@media (min-width: 800px) {
+    .services{
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*Check the sbling and ignore the first one and adding the margin*/
+    .service + .service{
+        margin-left: 2em;
+    }
+}
 
 
 

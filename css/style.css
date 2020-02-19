@@ -40,6 +40,9 @@
 
 
 /*General Styles*/
+
+html{ scroll-behavior: smooth; }
+
 body{
     background: var(--clr-right);
     color:      var(--clr-dark);
@@ -183,6 +186,27 @@ nav{
     top: 1em;
     z-index: 1000;
 }
+
+.nav-open .nav{
+    transform: translateX(0);
+}
+
+.nav-open .nav{
+    position: fixed;
+}
+
+.nav-open .hamburger{
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before{
+    transform: rotate(90deg) translateX(-6px);
+}
+.nav-open .hamburger::after{
+    opacity: 0;
+}
+
+
 
 .hamburger{
     /*background: var(--clr-dark);*/

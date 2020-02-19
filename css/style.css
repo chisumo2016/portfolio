@@ -31,3 +31,38 @@
         --fs-body: 1.125rem;
     }
 }
+
+/*General Styles*/
+
+body{
+    background: var(--clr-right);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.4;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -12,7 +12,6 @@
     --fw-reg: 300;
     --fw-bold:900;
 
-    --clr-right: #fff;
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #16e0bd;
@@ -44,7 +43,7 @@
 html{ scroll-behavior: smooth; }
 
 body{
-    background: var(--clr-right);
+    background: var(--clr-light);
     color:      var(--clr-dark);
     margin:         0;
     font-family: var(--ff-primary);
@@ -241,9 +240,6 @@ nav{
 
 
 /*nav { display:none;}*/
-
-
-
 
 
 /*Introduction  Section*/
@@ -454,18 +450,22 @@ nav{
     margin: 0.5em;
 }
 
-
-
-
-
-
-
-
 .social-list__link{
     padding: .5em;
 }
 
+/*Individual portfolio item styles*/
+.portfolio-item-individual{
+    padding: 0 2em 2em ;
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
+.portfolio-item-individua p{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
